@@ -446,6 +446,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../connect-hyper-v/" class="md-nav__link">
+        Hyper-V (SCVMM)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../connect-yandex/" class="md-nav__link">
         Яндекс Облако
       </a>
@@ -586,10 +600,10 @@
 <p>Подключите вашу приватную или публичную систему виртуализации к Clouder. После подключения будет запущен процесс сканирования ресурсов: сетей, машин и дисков.</p>
 <p>Авторизуйтесь в Cloudmaster в роли <code>Глобального администратора</code>. Кликните на <img alt="⚙" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2699.svg" title=":gear:" /> в правом верхнем углу, выберите пункт <strong>Подключение к облакам</strong> и далее —  необходимый вариант виртуализации. </p>
 <p>Далее, все подключённые системы виртуализации будут иметь внутренний термин <em>Облако Clouder</em>.</p>
-<p><img alt="Screenshot" src="../img/connect_menu.png" />
-<img alt="Screenshot" src="../img/cloud_choice_menu.png" /></p>
+<p><img alt="Screenshot" src="../img/connect_menu.png" width="600" />
+<img alt="Screenshot" src="../img/cloud_choice_menu.png" width="600" /></p>
 <p>Для каждой системы виртуализации будет предложено заполнить необходимые авторизационные данные.</p>
-<p><img alt="Screenshot" src="../img/hyper-v_connection.png" /></p>
+<p><img alt="Screenshot" src="../img/hyper-v_connection.png" width="600" /></p>
 <p>После успешной аутентификации начнётся процесс сканирования инфраструктуры и загрузки виртуальных машин в раздел <strong>Ресурсы</strong>. 
 Список виртуальных машин подгрузится в течение 5-10 мин.</p>
 <h2 id="_3">Создание пользователей</h2>
@@ -607,7 +621,7 @@
 <p class="admonition-title">Роли Coster и Clouder</p>
 <p>Необходимо добавить роли для обих модулей. Роли <code>Глобальный администратор</code> Clouder и роль <code>Администратор</code> Сoster дают доступ к меню управления пользователями и подключением облаков.</p>
 </div>
-<p><img alt="Screenshot" src="../img/create_user_menu.png" /></p>
+<p><img alt="Screenshot" src="../img/create_user_menu.png" width="600" /></p>
 <p>Новому пользователю на почту будет направлен временный пароль доступа.
 Пользователи могут самостоятельно изменить свой пароль, нажав на аватарку в правом верхнем углу. Пароль должен соответствовать требованиям сложности:</p>
 <ul>
@@ -623,10 +637,10 @@
 <p>Каждая <code>Подписка</code> относится только к одному к Облаку Clouder. Т.е. нельзя объединить ресурсы или объемы из разных подключений.</p>
 </div>
 <p>Создайте <code>Заявку</code> с соответствующим типом в разделе <strong>Заявки</strong> и укажите нужные объемы квоты ресурсов.</p>
-<p><img alt="Screenshot" src="../img/create_request_menu.png" /></p>
+<p><img alt="Screenshot" src="../img/create_request_menu.png" width="600" /></p>
 <p><code>Глобальный администратор</code> получит <em>Заявку</em> и сможет ее согласовать или отклонить. Если заявка согласована, <code>Подписка</code> будет создана и отобразится в разделе <strong>Подписки</strong>.</p>
 <p><code>Глобальный администратор</code> должен добавить в подписку сети, в которых разрешено создавать ВМ. Добавить сеть можно в карточке подписки во вкладке <strong>Сети</strong>. </p>
-<p><img alt="Screenshot" src="../img/managing_subscription_menu.png" /></p>
+<p><img alt="Screenshot" src="../img/managing_subscription_menu.png" width="600" /></p>
 <div class="admonition важно">
 <p class="admonition-title">Важно</p>
 <p>Добавьте в подписку сети, чтобы пользователи могли создавать машины. Проверьте соблюдение следующих условий:</p>
@@ -647,10 +661,10 @@
 </div>
 <h2 id="_6">Изменение подписки</h2>
 <p>Квоту в <code>Подписке</code> можно увеличть или уменьшить. Изменение производится через заявку с типом <code>Изменение квоты подписки</code>.</p>
-<p><img alt="Screenshot" src="../img/request_to_change_quota.png" /></p>
+<p><img alt="Screenshot" src="../img/request_to_change_quota.png" width="600" /></p>
 <p>После рассмотрения и согласования <code>Заявки</code> <code>Глобальным администратором</code> в <code>Подписке</code> изменится квота ресурсов, доступная для создания новых и изменения прежних ВМ.</p>
-<div class="admonition внимание">
-<p class="admonition-title">Внимание</p>
+<div class="admonition attention">
+<p class="admonition-title">Квоты подписок и квоты облака</p>
 <p>Изменение квоты производится с учетом установленных лимитов и текущего распределения ресурсов в облаке. Если лимит по какому-либо ресурсу исчерпан, система не даст увеличить квоту. Лимиты устанавливливаются при подключении облака. </p>
 </div>
 <p>Удаление <code>Подписки</code>производится через <code>Заявку</code> с типом <code>Удаление подписки</code>.</p>
@@ -681,7 +695,7 @@
 <h2 id="_9">Подключение к ВМ</h2>
 <p>К виртуальной машине можно подключиться прямо из браузера, выбрав вкладку <strong>Консоль</strong> в карточке ВМ и нажав <strong>Подключиться</strong>. Доступно подключение по RDP или через SSH.</p>
 <p><em>Для корректной работы подключения к ВМ необходимо дополнительно настроить корректную сетевую связность. Обратитесь к команде Cloudmaster за деталями.</em></p>
-<p><img alt="Screenshot" src="../img/connect_to_vm_console.png" /></p>
+<p><img alt="Screenshot" src="../img/connect_to_vm_console.png" width="600" /></p>
 
 
 
